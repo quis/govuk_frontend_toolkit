@@ -11,9 +11,20 @@ module.exports = function(grunt) {
           helpers: 'spec/unit/*Helper.js'
         }
       }
+    },
+    scsslint: {
+      allFiles: [
+        'stylesheets/**/*.scss',
+      ],
+      options: {
+        bundleExec: false,
+        reporterOutput: 'scss-lint-report.xml',
+        colorizeOutput: true
+      },
     }
   });
   grunt.loadNpmTasks('grunt-contrib-jasmine');
-  grunt.registerTask('test', ['jasmine']);
+  grunt.loadNpmTasks('grunt-scss-lint');
+  grunt.registerTask('test', ['scsslint', 'jasmine']);
   grunt.registerTask('default', ['test']);
 };
