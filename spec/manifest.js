@@ -6,6 +6,7 @@ var manifest = {
     '../../javascripts/govuk/modules/auto-track-event.js',
     '../../javascripts/govuk/multivariate-test.js',
     '../../javascripts/govuk/primary-links.js',
+    '../../javascripts/govuk/progressive-disclosure.js',
     '../../javascripts/govuk/stick-at-top-when-scrolling.js',
     '../../javascripts/govuk/stop-scrolling-at-footer.js',
     '../../javascripts/govuk/selection-buttons.js',
